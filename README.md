@@ -53,34 +53,9 @@ This will install:
 - React Router DOM
 - Vite
 
-### 2. Enable Firebase Authentication
-
-1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Select your project
-3. Go to **Authentication** → **Get Started**
-4. Enable **Email/Password** sign-in method
-5. Click **Save**
-
-### 3. Configure Firebase
-
-1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Create a new project (or use existing)
-3. Enable **Firestore Database**:
-   - Go to Firestore Database
-   - Click "Create database"
-   - Start in **test mode** (for development)
-   - Choose a location
-
-4. Get your Firebase config:
-   - Go to Project Settings (gear icon)
-   - Scroll down to "Your apps"
-   - Click on the web icon (</>)
-   - Copy the firebaseConfig object
 
 
-```
-
-### 3. Run the Application
+### 2. Run the Application
 ```bash
 npm run dev
 ```
