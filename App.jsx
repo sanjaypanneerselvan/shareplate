@@ -322,7 +322,7 @@ function Navbar({ user }) {
 function Footer() {
     return (
         <>
-            <style> 
+            <style>
                 {` 
                 @keyframes float {
                     0%, 100% {
@@ -1362,6 +1362,8 @@ const styles = {
         minHeight: '100vh',
         background: '#ffffff',
         fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        display: 'flex',
+        flexDirection: 'column',
     },
 
     // Home Page
@@ -1768,6 +1770,75 @@ const styles = {
         boxShadow: '0 10px 30px rgba(0,0,0,0.2)',
         zIndex: 1000,
         animation: 'slideIn 0.3s ease',
+    },
+
+    // Footer Styles
+    footer: {
+        position: 'relative',
+        background: 'linear-gradient(135deg, #1FAF4C 0%, #178A3C 100%)',
+        padding: '3rem 2rem',
+        marginTop: 'auto',
+        overflow: 'hidden',
+    },
+    footerOverlay: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        background: 'radial-gradient(circle at 30% 50%, rgba(255,255,255,0.1) 0%, transparent 50%)',
+        pointerEvents: 'none',
+    },
+    footerContent: {
+        position: 'relative',
+        maxWidth: '1200px',
+        margin: '0 auto',
+        textAlign: 'center',
+        zIndex: 1,
+    },
+    footerIcon: {
+        fontSize: '3rem',
+        marginBottom: '1rem',
+        display: 'inline-block',
+    },
+    footerText: {
+        fontSize: '1.2rem',
+        fontWeight: '600',
+        color: 'white',
+        marginBottom: '1rem',
+        textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+    },
+    footerDivider: {
+        width: '80px',
+        height: '3px',
+        background: 'rgba(255,255,255,0.5)',
+        margin: '1.5rem auto',
+        borderRadius: '2px',
+    },
+    footerCredit: {
+        fontSize: '1rem',
+        color: 'rgba(255,255,255,0.95)',
+        marginBottom: '1.5rem',
+        fontWeight: '500',
+    },
+    footerSocial: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '1rem',
+        flexWrap: 'wrap',
+        marginTop: '1.5rem',
+    },
+    footerBadge: {
+        padding: '0.6rem 1.2rem',
+        background: 'rgba(255,255,255,0.2)',
+        borderRadius: '20px',
+        fontSize: '0.9rem',
+        color: 'white',
+        fontWeight: '600',
+        backdropFilter: 'blur(10px)',
+        border: '1px solid rgba(255,255,255,0.3)',
+        transition: 'all 0.3s ease',
+        cursor: 'default',
     },
 };
 
